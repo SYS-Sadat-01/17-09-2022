@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="./bootstarp.min.css"> -->
+    <title>Java GOSALA</title>
+</head>
+<body>
+    <div class="table-responsive">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>name</th>
+                    <th>lname</th>
+                    <th>Dep</th>
+                    <th>id_no</th>
+                    <th>phone</th>
+                    <th>email</th>
+                    <th>photo</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+               
+                <!-- <img src="./pic.jpg" style="height: 100px; width: auto;" alt="" srcset=""> -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<!-- <script src="./janjalnaq.js"></script> -->
+
+<script>
+    
+fetch("products.json")
+.then(function(Response){
+  return Response.json();
+})
+
+.then(function(products){
+
+    // console.log(products)
+//   var plc = document.querySelector('#data')
+//   var out = '';
+
+//   for(let pro of json){
+//     out +=`
+//     <tr>
+//     <td>${pro.id}</td>
+//     <td>${pro.name}</td>
+//     <td>${pro.lname}</td>
+//     <td>${pro.Dep}</td>
+//     <td>${pro.id_no}</td>
+//     <td>${pro.phone}</td>
+//     <td>${pro.email}</td>
+//     <td> <img src=" ${pro.photo}" style="height: 100px; width: auto;" alt="" srcset=""></td>
+
+    
+//     </tr>
+    
+//     `
+//   }
+
+//   plc.innerHTML = out;
+})
+
+</script>
+</html>
